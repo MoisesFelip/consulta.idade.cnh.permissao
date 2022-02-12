@@ -1,10 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-</Project>
+//* programa para saber a idade //
+Console.Write("digite seu Nome  ");
+string Nome = Console.ReadLine();
+Console.WriteLine("ola  " + Nome!);
+Console.WriteLine("digite o ano do seu nacimento");
+int ano=int.Parse(Console.ReadLine());
+int ahj = 2022 - ano;// ano da consulta/
+Console.WriteLine($"você tem {ahj } anos");
+Console.BackgroundColor = ConsoleColor.Red; if (ahj >= 18) Console.Write("você é maior de idade");
+if (ahj < 18) Console.WriteLine("vocé é menor de idade");
+if (ahj >= 18) Console.WriteLine("  pode tirar cnh  ");
+if (ahj < 18) Console.WriteLine("  Não pode tirar cnh  ");
